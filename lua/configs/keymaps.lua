@@ -22,3 +22,7 @@ map('n', '<C-f>f', '<CMD>Telescope find_files<CR>')	-- Lista los archivos en nue
 map('n', '<C-f>g', '<CMD>Telescope live_grep<CR>')	-- Busca el string en nuestro directorio de trabajo
 map('n', '<C-f>b', '<CMD>Telescope buffers<CR>')		-- Lista todos los buffers abierto en neovim
 map('n', '<C-f>h', '<CMD>Telescope help_tags<CR>')	-- Lista todos los help tags y abre en una nueva ventana
+
+-- Neotree:
+map('n', '<C-n>', '<CMD>Neotree<CR>')
+map('n', '<C-c>', '<CMD>Neotree close<CR>')
