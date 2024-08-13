@@ -1,11 +1,12 @@
 local function map(mode, lhs, rhs, opts)
-	local options = {noremap = true, silent = true} 
+	local options = {noremap = true, silent = true}
 
 	if opts then
 		options = vim.tbl_extend('force', options, opts)
 	end
 
-	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+	vim.keymap.set(mode, lhs, rhs, options)
+	-- vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
 
@@ -26,3 +27,9 @@ map('n', '<C-f>h', '<CMD>Telescope help_tags<CR>')	-- Lista todos los help tags 
 -- Neotree:
 map('n', '<C-n>', '<CMD>Neotree<CR>')
 map('n', '<C-c>', '<CMD>Neotree close<CR>')
+
+
+-- LSP:
+map('n', 'K', vim.lsp.buf.hover)				-- Muestra información acerca del simbolo debajo del cursor en una pantalla flotante
+map('n', 'gd', vim.lsp.buf.definition)	-- Va a la definición del simbolo que se encuetra debajo del cursor
+map({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action)
