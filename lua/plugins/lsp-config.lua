@@ -6,7 +6,7 @@ return {
 	{
 		'williamboman/mason-lspconfig.nvim',
 		config = {
-			ensure_installed = { 'jdtls', 'lua_ls' }
+			ensure_installed = { 'tsserver', 'jdtls', 'lua_ls' }
 		},
 	},
 	{
@@ -16,6 +16,7 @@ return {
 
 			lspconfig.lua_ls.setup({})
 			lspconfig.jdtls.setup({})
+			lspconfig.tsserver.setup({})
 		end,
 	},
 }

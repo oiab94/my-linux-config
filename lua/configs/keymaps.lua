@@ -30,6 +30,8 @@ map('n', '<C-c>', '<CMD>Neotree close<CR>')
 
 
 -- LSP:
-map('n', 'K', vim.lsp.buf.hover)				-- Muestra información acerca del simbolo debajo del cursor en una pantalla flotante
-map('n', 'gd', vim.lsp.buf.definition)	-- Va a la definición del simbolo que se encuetra debajo del cursor
-map({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action)
+map('n', 'K', vim.lsp.buf.hover)						-- Muestra información acerca del simbolo debajo del cursor en una pantalla flotante
+map('n', 'gd', vim.lsp.buf.definition)			-- Va a la definición del simbolo que se encuetra debajo del cursor
+map('n', 'gD', vim.lsp.buf.declaration) 		-- Va la declaración del simbolo que se encuentra debajo del cursor
+map('n', '<leader>rn', vim.lsp.buf.rename) 	-- Renombra todas las referencias que se encuentra debajo del cursor
+map('n', 'gr', vim.lsp.buf.references) 			-- Lista todas las referencias que se encuentra debajo del cursor
