@@ -1,22 +1,32 @@
 return {
+	-- Mason
 	{
 		'williamboman/mason.nvim',
-		config = true,
 	},
+
+	-- Mason-lspconfig
 	{
 		'williamboman/mason-lspconfig.nvim',
-		config = {
-			ensure_installed = { 'tsserver', 'jdtls', 'lua_ls' }
-		},
+		dependencies = {
+			'neovim/nvim-lspconfig',
+		}
 	},
+
+	--lspconfig
 	{
 		'neovim/nvim-lspconfig',
 		config = function()
 			local lspconfig = require('lspconfig')
 
+			-- Setup
+			require('mason').setup({})
+			require('mason-lspconfig').setup({
+				ensure_installed = { 'lua_ls' }
+			})
+
+			-- Conectar a los servers
+			-- Lua
 			lspconfig.lua_ls.setup({})
-			lspconfig.jdtls.setup({})
-			lspconfig.tsserver.setup({})
 		end,
 	},
 }

@@ -1,7 +1,3 @@
--- Key Leader
-vim.g.mapleader = ' '
-
-
 -- MOSTRAR LOS NUMEROS DE LINEA
 vim.opt.number = true
 vim.opt.relativenumber = true
