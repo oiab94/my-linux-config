@@ -1,3 +1,6 @@
+-- NO GUARDA ARCHIVOS TEMPORALES
+vim.opt.swapfile = false
+
 -- MOSTRAR LOS NUMEROS DE LINEA
 vim.opt.number = true
 vim.opt.relativenumber = true
