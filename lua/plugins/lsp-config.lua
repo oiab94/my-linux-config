@@ -18,7 +18,6 @@ return {
 		config = function()
 			local lspconfig = require('lspconfig')
 			local capabilities = require('cmp_nvim_lsp').default_capabilities()
-			print('lsp cargado')
 
 			-- Setup
 			require('mason').setup({})
@@ -28,7 +27,7 @@ return {
 
 			-- Conectar a los servers
 			-- Typescript
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 				on_attach = on_attach
 			})

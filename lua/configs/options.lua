@@ -12,3 +12,6 @@ vim.opt.shiftwidth = 0			-- Número de espacios por cada (auto)indent. Estando e
 vim.opt.smartindent = true
 --vim.opt.expandtab = false -- TRUE: Los tabs insertados serán espacio
 
+
+-- AGREGA EL COLOR DE LAS COLUMNAS
+vim.opt.colorcolumn = '81'
