@@ -44,3 +44,7 @@ map({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, { buffer=0 })	-- Indica l
 
 map('n', ']d', vim.diagnostic.goto_next, { buffer=0 })	-- Salta al anterior error encotrado
 map('n', '[d', vim.diagnostic.goto_prev, { buffer=0 })	-- Salta al siguiente error encotrado
+
+
+-- Gitsigns:
+map('n', '<leader>hb', '<CMD>Gitsigns blame_line<CR>') -- Muestra el autor y el commit del archivo en la linea actual
