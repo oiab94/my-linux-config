@@ -1,0 +1,11 @@
+[user]
+	email = oscar.alonso.994@gmail.com
+	name = oscar-laptop
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[alias]
+	lg = log --pretty=format:'%C(yellow)%h %C(green)%ad | %C(auto)%d %C(white)%s %C(yellow)[%an]' --graph --date=short
+[core]
+	editor = nvim
