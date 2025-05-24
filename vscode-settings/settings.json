@@ -1,0 +1,59 @@
+{
+  // FILES CONFIGURATION
+  "files.autoSave": "afterDelay",
+
+  // EDITOR CONFIGURATON
+  "editor.tabSize": 2,
+  "editor.fontSize": 20,
+  "editor.fontFamily": "0xProto Nerd Font",
+  "editor.lineNumbers": "relative",
+  "editor.hover.enabled": true,
+  "editor.autoIndent": "advanced",
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+    { "column": 80, "color": "#00ff00" },
+    { "column": 100, "color": "#ff0000" },
+  ],
+
+  // WORKBENCH CONFIGURATION
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+    "editor.background": "#000808",
+    "editor.selectionBackground": "#005f5f",
+    "editorLineNumber.foreground": "#005f5f",
+    "editorLineNumber.activeForeground": "#ff5f00",
+    "editor.findMatchBackground": "#0000ff",
+    "editor.findMatchHighlightBackground": "#ea5c0055",
+    "git.blame.editorDecorationForeground": "#005f5f",
+    "statusBar.background": "#005f87",
+    "statusBar.noFolderBackground": "#005f87",
+    "statusBar.debuggingBackground": "#005f87",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+
+  // MATERIAL ICON CONFIGURATION
+  "material-icon-theme.activeIconPack": "nest",
+
+  // ERROR LENS CONFIGURATION
+  "errorLens.statusBarMessageAlignment": "right",
+  "errorLens.statusBarMessageTemplate": "$severity $count $message",
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info",
+    "error"
+  ],
+  "errorLens.statusBarMessageEnabled": true,
+
+  // VIM CONFIGURATION
+  "vim.leader": "<space>",
+  "vim.statusBarColorControl": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+
+  // GIT BLAME CONFIGURATION
+  "git.blame.editorDecoration.enabled": true, 
+  "git.blame.editorDecoration.template": "${hashShort} ${authorDateAgo} -> ${subject} [${authorName}]"
+}
